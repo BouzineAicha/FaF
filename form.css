@@ -7,7 +7,10 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-style: normal;
   }
-  
+  header{
+      background-size: cover;
+      
+  }
   .header {
     background-image: url(/image/header.jpg);
     background-color: #f1f1f1;
@@ -18,7 +21,7 @@ body {
   #navbar {
     overflow: hidden;
     height: 55px;
-    background-color: rgba(255, 167, 167, 0.562);
+    width: 100%;
     position: fixed;
     transition: 1s;
   }
@@ -53,6 +56,7 @@ body {
     } */
   .logo {
     margin-top: -15px;
+    margin-left: 12px;
   }
   .logo:hover {
     color: #cfcedc;

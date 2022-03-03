@@ -12,7 +12,7 @@
         <a href="javascript:void(0)">Home</a>
         <a href="javascript:void(0)">Products</a>
         <a href="javascript:void(0)">Ingredients</a>
-        <a href="#"><img src="image/logo_light.png" class="logo" height="60px"></img></a>
+        <a href="#"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
         <a href="javascript:void(0)">About Us</a>
         <a href="javascript:void(0)">Contact</a>
         <a href="#"><img src="image/bag.png" class="bag" height="20px"></a>
@@ -26,15 +26,74 @@
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
-                document.getElementById("navbar").style.background = "#501e27";
+                document.getElementById("navbar").style.background = "linear-gradient(#CFCEDC, white)";
+                document.getElementsByTagName("a").style.color = "black";
+            
+                
             } else {
 
                 document.getElementById("navbar").style.background = "none";
+                
+                
             }
         }
     </script>
     <header>
-     
+
+        <img src="image/header.jpg" width="100%">
     </header>
+    <div class="content">
+        <h3>hi this is filo san</h3>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+    </div>
 </body>
 </html>
