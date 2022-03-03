@@ -18,17 +18,37 @@
 
 <body>
     <div id="navbar">
-        <a href="javascript:void(0)">Home</a>
-        <a href="javascript:void(0)">Products</a>
-        <a href="javascript:void(0)">Ingredients</a>
-        <a href="#"><img src="img/logo_light.png" class="logo" height="60px"></img></a>
-        <a href="javascript:void(0)">About Us</a>
-        <a href="javascript:void(0)">Contact</a>
-        <a href="#"><img src="img/bag.png" class="bag" height="20px"></a>
-        <a href="javascript:void(0)">Login</a>
+        <a class="bl" href="javascript:void(0)">Home</a>
+        <a class="bl" href="javascript:void(0)">Products</a>
+        <a class="bl" href="javascript:void(0)">Ingredients</a>
+        <a class="bl" href="#"><img src="image/logo_light.png" class="logo" height="60px"></img></a>
+        <a class="bl" href="javascript:void(0)">About Us</a>
+        <a class="bl" href="javascript:void(0)">Contact</a>
+        <a class="bl" href="#"><img src="image/bag.png" class="bag" height="20px"></a>
+        <a class="bl" href="javascript:void(0)">Login</a>
     </div>
     <div class="content">
         <h3>hi this is filo san</h3>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
+        <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
+        </p><br>
         <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
         </p><br>
         <p>abcdefghijklmnopqrstuvwxyzdkjfakfjhnk
@@ -66,12 +86,16 @@
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
 
-                document.getElementById("navbar").style.background = "#501e27";
+                document.getElementById("navbar").style.background = "linear-gradient(#CFCEDC, white)";
+                document.getElementsByTagName("a").style.color = "black";
+                
             } else {
 
-                document.getElementById("navbar").style.background = "none";
+                document.getElementById("navbar").style.background = "#CFCEDC";
+                
+                
             }
         }
     </script>
