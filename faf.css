@@ -1,5 +1,5 @@
 .mapouter{
-   
+ margin-top: 5%;  
 
 }
 body{
@@ -7,13 +7,8 @@ body{
     margin: 0;
     padding: 0;
 }
-.cont{
-    font-size: 27px;
-}
+
 .contact{
     display: flex;
     height: 100vh;
-}
-.hun{
-    font-size:42px ;
 }

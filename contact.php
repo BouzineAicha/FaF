@@ -8,31 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="contact">
+    <!-- <img src="logos\retour.png" style="width: 40px;  margin-left: 60px; cursor:pointer; "> -->
+    <div class="contact" style=" margin-left: 60px;">
         <div>
             <div>
-                <h1 class="hun">Contact</h1>
-                <p class="cont">
-                    We would love hearing from you and moreover 
-                    meeting you in person. Below you can find all 
+                <h1 style="font-size:43px;">Contact</h1>
+                <p style="font-size:29px;">
+                    We would love hearing from you and  moreover 
+                    meeting you in person.<br> Below you can find all 
                     contact details. See you soon!
                 </p>
             </div>
-            <div>
-                <h2 style="font-size:36px ;">Give us a call</h2>
-                <p style="font-size:29px ;">Mon – Fri, 9am – 7pm EST:<br>+44 583 837390</p>
+            <div style="margin-top:35px;">
+                <h2 style="font-size:33px ;">Give us a call</h2>
+                <p style="font-size:24px ;">Mon – Fri, 9am – 7pm EST:<br>+44 583 837390</p>
             </div>
-            <div>
-                <h2 style="font-size:36px ;">Write us an email</h2>
-                <p style="font-size:29px ;">faf@example.com</p>
+            <div style="margin-top:35px;">
+                <h2 style="font-size:33px ;">Write us an email</h2>
+                <p style="font-size:24px ;">faf@example.com</p>
             </div>
         </div>
         <div class="mapouter">
             <div class="gmap_canvas">
-                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=35.739913,%20-5.827590&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <a href="https://123movies-to.org">123movies</a><br>
+                <iframe width="80%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=35.739913,%20-5.827590&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <style>.mapouter{position:relative;text-align:right;height:30px;width: 100%;}</style>
-                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+               <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:90%;}</style> 
             </div>
         </div>
     </div>
