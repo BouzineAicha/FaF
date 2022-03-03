@@ -13,14 +13,15 @@
 <div class="line"></div>
 <form>
 
-<p>Full name</p> <input type="text" placeholder=" First Name"><input type="text" placeholder="Last Name"><br><br>
-<p> number</p> <input type="text"placeholder="Enter aphone number"><br><br>
-<p>E-mail</p><input type="text"placeholder="Enter an email"><br><br>
+<h2>Full name</h2> <input type="text" placeholder=" First Name"><br><br><input type="text" placeholder="Last Name"><br><br>
+<h2> number</h2> <input type="text"placeholder="Enter aphone number"><br><br>
+<h2>E-mail</h2><input type="text"placeholder="Enter an email"><br><br>
 
- <p>Password</p><input type="password"><br><br><br><input type="password"placeholder="Reenter password"><br><br>
-<p>Address</p> <input type="text" placeholder="Address"><input type="text" placeholder="Street address"><br><br><br>
-        <input type="text" placeholder=" Codepostal"><input type="texr" placeholder="Countr"><br> <br>
-
+ <h2>Password</h2><input type="password"><br><br><br><input type="password"placeholder="Reenter password"><br><br>
+ <h2>Address</h2> 
+<input type="text"  id="adrinut" placeholder="Address"><input type="text" id="adrinut" placeholder="Street address"><br><br><br>
+        <input type="text" id="adrinut" placeholder=" Codepostal"><input type="texr" id="adrinut" placeholder="Countr"><br> <br>
+ </div>
         <button>Regiter</button>
 
 
