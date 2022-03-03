@@ -1,0 +1,19 @@
+.mapouter{
+   
+
+}
+body{
+    background-image: linear-gradient(#FAECEA,#D7DCEB);
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    font-size: 27px;
+}
+.contact{
+    display: flex;
+    height: 100vh;
+}
+.hun{
+    font-size:42px ;
+}
