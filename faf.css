@@ -2,7 +2,7 @@
  margin-top: 5%;  
 
 }
-body{
+.body{
     background-image: linear-gradient(#FAECEA,#D7DCEB);
     margin: 0;
     padding: 0;
@@ -11,4 +11,44 @@ body{
 .contact{
     display: flex;
     height: 100vh;
+}
+
+#inputs{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border: 1px solid #000000;
+}
+
+#login{
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer; 
+}
+.back{
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    left: 33%;
+    border-radius: 0px;
+    height: 80%;
+}
+.para{
+    padding: 0 50px;
+}
+p{
+    text-align: center;
+}
+.icon{
+    width: 15px;
+    position: absolute;
+    left: 354px;
+    top: 10px;
 }

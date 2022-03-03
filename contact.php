@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="faf.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <!-- <img src="logos\retour.png" style="width: 40px;  margin-left: 60px; cursor:pointer; "> -->
     <div class="contact" style=" margin-left: 60px;">
         <div>
