@@ -12,7 +12,7 @@
     <div class="contact" style=" margin-left: 60px;">
         <div>
             <div>
-                <h1 style="font-size:43px;">Contact</h1>
+                <h1 style="font-size:43px; color:#AFB9D4;">Contact</h1>
                 <p style="font-size:29px;">
                     We would love hearing from you and  moreover 
                     meeting you in person.<br> Below you can find all 
@@ -20,11 +20,11 @@
                 </p>
             </div>
             <div style="margin-top:35px;">
-                <h2 style="font-size:33px ;">Give us a call</h2>
+                <h2 style="font-size:33px ;color:#AFB9D4;">Give us a call</h2>
                 <p style="font-size:24px ;">Mon – Fri, 9am – 7pm EST:<br>+44 583 837390</p>
             </div>
             <div style="margin-top:35px;">
-                <h2 style="font-size:33px ;">Write us an email</h2>
+                <h2 style="font-size:33px ;color:#AFB9D4;">Write us an email</h2>
                 <p style="font-size:24px ;">faf@example.com</p>
             </div>
         </div>
