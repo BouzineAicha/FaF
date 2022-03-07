@@ -111,5 +111,8 @@
 <button class="see-all">See All</button>
     </main>
 </body>
-
+<form>
+    <?php include"footer.php"
+    ?>
+</form>
 </html>
