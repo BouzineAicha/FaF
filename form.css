@@ -41,7 +41,7 @@ body {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 49px;
+    padding: 7px 49px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -58,14 +58,64 @@ body {
     margin-top: -15px;
     margin-left: 12px;
   }
+  .logo2 {
+    margin-top: -15px;
+    margin-left: 12px;
+
+  }
   .logo:hover {
     color: #cfcedc;
   }
-  
-  .content {
-    padding: 16px;
+  .logo2:hover {
+    color: #cfcedc;
+  }
+  #rabbit{
+    background-color: #FAECEA;
+    border-radius: 300px;
+    height: 200px;
+    width: 200px;
+  }
+  #heart{
+    background-color: #FAECEA;
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
   }
   
+  #love{
+    background-color: #FAECEA;
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+  } 
+  #natur{
+    background-color: #FAECEA;
+    border-radius: 300px;
+    width: 200px;
+    height: 200pX; 
+    
+  }
+  .content {
+    
+    padding: 16px;
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
+  }
+.Ingredients{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+  
+  .content {
+ 
+    padding: 16px;
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
+  }
+  .paragraph{
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
+  }
   .sticky {
     position: fixed;
     top: 0;
