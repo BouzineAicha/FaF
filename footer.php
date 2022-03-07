@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="faf.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,12 +15,12 @@
         <p style="font-size:20px;">446 Ramblewood St. Gurnee, IL 60031</p>
     </div>
     <div class="logos">
-        <img src="image/logo.png" style="margin-left: 23px;">
+        <img src="image/logo.png" >
         <div  style=" justify-content:space-around; margin:30px ">
-            <img src="image/facebook-square.png">
+            <img src="image/facebook-square.png" >
             <img src="image/Vector.png">
             <img src="image/snapchat-square.png">
-            <img src="image/twitter-square.png">
+            <img src="image/twitter-square.png" style="margin-right: 30px;">
         </div>
     </div>
         <div  style="font-size:20px; margin-top:100px">

@@ -43,8 +43,8 @@ header {
   text-decoration: none;
   font-size: 17px;
 }
-p{
-    font-size: medium;
+p {
+  font-size: medium;
 }
 #navbar a:hover {
   color: black;
@@ -68,62 +68,62 @@ p{
 .logo2:hover {
   color: #cfcedc;
 }
-#rabbit{
-    background-color: #FAECEA;
-    border-radius: 300px;
-    height: 200px;
-    width: 200px;
-  }
-  #heart{
-    background-color: #FAECEA;
-    border-radius: 300px;
-    width: 200px;
-    height: 200px;
-  }
-  
-  #love{
-    background-color: #FAECEA;
-    border-radius: 300px;
-    width: 200px;
-    height: 200px;
-  } 
-  #natur{
-    background-color: #FAECEA;
-    border-radius: 300px;
-    width: 200px;
-    height: 200pX; 
-  }
-  .content {
-    padding: 16px;
-    display: grid ;
-    grid-template-columns: auto auto auto auto;
-  }
-  .Ingredients{
-      background-color: rgba(246, 222, 219, 0.58);
-   height: 500px;
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .ing{
-  Line-height: 40px;
-Line-height: 100%;
-  }
-  .ing h1{
-    Font-family: Caramello Free;
-    Font-style: Regular;
-    Font-size: 69px;
-Line-height: 104px;
-Line-height: 100%;
-text-Align: Left;
-Vertical-align: Top;
-  }
-  .see-all{
-    Font-family: Josefin Sans;
-    Font-style: Regular;
-    Font-size: 28px;
-      background-color:#FAECEA;
-      border-radius: 12px;
-  }
+#rabbit {
+  background-color: #faecea;
+  border-radius: 300px;
+  height: 200px;
+  width: 200px;
+}
+#heart {
+  background-color: #faecea;
+  border-radius: 300px;
+  width: 200px;
+  height: 200px;
+}
+
+#love {
+  background-color: #faecea;
+  border-radius: 300px;
+  width: 200px;
+  height: 200px;
+}
+#natur {
+  background-color: #faecea;
+  border-radius: 300px;
+  width: 200px;
+  height: 200px;
+}
+.content {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.Ingredients {
+  background-color: rgba(246, 222, 219, 0.58);
+  height: 500px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.ing {
+  line-height: 40px;
+  line-height: 100%;
+}
+.ing h1 {
+  font-family: Caramello Free;
+  font-style: Regular;
+  font-size: 69px;
+  line-height: 104px;
+  line-height: 100%;
+  text-align: Left;
+  vertical-align: Top;
+}
+.see-all {
+  font-family: Josefin Sans;
+  font-style: Regular;
+  font-size: 28px;
+  background-color: #faecea;
+  border-radius: 12px;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -185,4 +185,63 @@ button {
   background-color: #cfd3df;
   width: 200px;
   height: 53px;
+}
+/* fooooooooooooooter */
+.mapouter {
+  margin-top: 5%;
+}
+.body {
+  background-image: linear-gradient(#faecea, #d7dceb);
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+  height: 100vh;
+}
+
+#inputs {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border: 1px solid #000000;
+}
+
+#login {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+.back {
+  width: 30%;
+  position: absolute;
+  top: 20px;
+  left: 33%;
+  border-radius: 0px;
+  height: 80%;
+}
+.para {
+  padding: 0 50px;
+}
+p {
+  text-align: center;
+}
+.icon {
+  width: 15px;
+  position: absolute;
+  left: 354px;
+  top: 10px;
+}
+.flexx {
+  background-image: linear-gradient(#ffffff, #d7dceb);
+  margin: 0;
+  padding: 0;
 }
