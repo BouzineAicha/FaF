@@ -237,7 +237,7 @@ input {
   border-radius: 12px;
 }
 #adrinut {
-  margin-left: 300px;
+  margin-left: 223px;
   width: 304px;
   height: 50px;
 }
@@ -309,21 +309,27 @@ input {
 
 
 #inputs {
-  width: 100%;
-  padding: 12px  139px;
+  /* width: 100%;
+  padding: 12px  139px; */
   margin: 15px 0;
-  display: inline-block;
-  border: 1px solid rgb(255, 255, 255);
-  box-sizing: border-box;
+  width:270px;
+  /* display: inline-block; */
+  /* border: 1px solid rgb(255, 255, 255); */
+  /* box-sizing: border-box; */
   font-family: Josefin Sans;
   font-style: Regular;
-  color: white;
-  font-size: 28px;
+  /* color: white; */
+  font-size: 15px;
   border: 1px solid #000000;
+
 }
 #inputs ::placeholder{
   color: #de8678;
 }
+#log{
+  margin-left: 53px;
+}
+
 
 
 #login {
