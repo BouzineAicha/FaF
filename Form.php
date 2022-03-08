@@ -9,6 +9,9 @@
     <title>Document</title>
 </head>
 <body>
+  
+    <?php include"nav.php"   ?>
+  
 <h1>Registration form</h1>
 <div class="line"></div>
 <form>
@@ -28,6 +31,9 @@
 
 
 
+    
+    <?php include"footer.php"
+    ?>
 
 </form>
 

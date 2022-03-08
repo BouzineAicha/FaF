@@ -3,19 +3,49 @@
 body {
   margin: 0;
   font-size: 28px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Josefin Sans;
   font-style: normal;
 }
-header {
-  background-size: cover;
+
+
+.headerp{
+    Font-family: Caramello Free;
+Font-style: Regular;
+Font-size: 49px;
+Line-height: 74px;
+Line-height: 100%;
+text-Align: 100px 50px;
+Vertical-align: Top;
+position: absolute ;
+bottom: 8px;
+left: 16px;
+
 }
-.header {
-  background-image: url(/image/header.jpg);
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
+.header{
+    font-family: Josefin Sans;
+    font-style: Regular;
+    font-size: 28px;
+Line-height: 74px;
+Line-height: 100%;
+text-Align: 100px 50px;
+Vertical-align: Top;
+position: absolute ;
+bottom: 8px;
+left: 16px;
+
 }
 
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  .cont {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
 #navbar {
   overflow: hidden;
   height: 55px;
@@ -23,6 +53,16 @@ header {
   position: fixed;
   transition: 1s;
 }
+#navbaro {
+
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-image: linear-gradient(#d7dceb,#ffffff);
+  
+}
+
 #navbar a:after {
   content: "";
   display: block;
@@ -38,6 +78,15 @@ header {
   float: left;
   display: block;
   color: #ffffff;
+  text-align: center;
+  padding: 7px 49px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbaro a {
+  float: left;
+  display: block;
+  color: #000000;
   text-align: center;
   padding: 7px 49px;
   text-decoration: none;
@@ -102,6 +151,7 @@ p {
   background-color: rgba(246, 222, 219, 0.58);
   height: 500px;
   display: grid;
+  font-size: 50px;
   grid-template-columns: auto auto;
 }
 .ing {
@@ -182,11 +232,12 @@ p {
 button {
   margin-top: 50px;
   margin-left: 45%;
+  border-radius: 10px;
   background-color: #cfd3df;
   width: 200px;
   height: 53px;
 }
-/* fooooooooooooooter */
+                                                               /* fooooooooooooooter */
 .mapouter {
   margin-top: 5%;
 }

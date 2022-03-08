@@ -61,26 +61,32 @@
     </script>
     <header>
 
-        <img src="image/header.jpg" width="100%">
+        <div id="header" class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('image/header.jpg') ;height:100vh ;background-size: cover  ; background-repeat: no-repeat";
+ ;><div>
+            <h1 class="headerp"> Discover our awesome range <br> of beauty products</h1>
+            <button  class="header">Shop Now</button>
+            </div>
+        </div>
+
     </header>
     <div class="content" style="margin-left: 70px;">
         <div>
             <div class="col-xs-15" id="rabbit">
                 <img src="image/icons8-rabbit-64.png " style="margin-left: 30% ; margin-top:30% " width="80px">
             </div>
-            <p style="margin-left: 30px;">Vegan & cruelty-free</p>
+            <p style="margin-left: 10px;">Vegan & cruelty-free</p>
         </div>
         <div>
             <div id="natur" class="col-sm-15">
                 <img src="image/icons8-natural-food-50.png" style="margin-left: 35% ; margin-top:30% " width="80px">
             </div>
-            <p style="margin-left: 30px;">Naturally derived ingredients</p>
+            <p style="margin-right: 30px;">Naturally derived ingredients</p>
         </div>
         <div>
             <div id="heart" class="col-md-15">
                 <img src="image/icons8-hearts-64.png" style="margin-left: 30% ; margin-top:35%">
             </div>
-            <p style="margin-left: 30px;">Made with love </p>
+            <p style="margin-left: 10px;">Made with love </p>
         </div>
         <div>
             <div id="love" class="col-lg-15">
@@ -96,23 +102,24 @@
                 <img src="image/nnnn 1.png" width="300px" style="margin-left: 100px; margin-top:50px">
             </div>
             <div class="ing">
-                <h1 style=" margin-top:50px">Ingredients</h1>
-                <p style=" margin-top:50px">We are going back to basics by<br> using ingredients everyone <br>understands. Our formulations<br> have proven efficacy and have<br> never been tested on animals.<br> Our beauty experts came up<br> with a limited product range for<br> higher quality of each products.</p>
+                <h1 style=" margin-top:50px; margin-left:100px ">Ingredients</h1>
+                <p style=" margin-top:50px ; margin-right:200px">We are going back to basics by<br> using ingredients everyone understands. Our formulations<br> have proven efficacy and have never been tested on animals.<br> Our beauty experts came up with a limited product range for<br> higher quality of each products.</p>
             </div>
         </div>
         <div class="ing">
-        <h1 style="text-align: center;margin-top:50px">From FAF</h1>
-    <p style="text-align: center;margin-top:50px">“For a long time we have been looking to create a new different beauty brand.<br> Our beauticians use effective ingredients that everyone<br> understands ...”</p>
-    <h1 style="text-align: center;margin-top:50px">Our bestseller</h1>
+            <h1 style="text-align: center;margin-top:50px">From FAF</h1>
+            <p style="text-align: center;margin-top:50px">“For a long time we have been looking to create a new different beauty brand.<br> Our beauticians use effective ingredients that everyone<br> understands ...”</p>
+            <h1 style="text-align: center;margin-top:50px">Our bestseller</h1>
         </div>
-<form>
-    
-</form>
-<button class="see-all">See All</button>
+        <form>
+
+        </form>
+        <button class="see-all">See All</button>
     </main>
 </body>
 <form>
-    <?php include"footer.php"
+    <?php include "footer.php"
     ?>
 </form>
+
 </html>
