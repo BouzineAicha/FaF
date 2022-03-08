@@ -84,13 +84,13 @@
         </div>
         <div>
             <div id="heart" class="col-md-15">
-                <img src="image/icons8-hearts-64.png" style="margin-left: 30% ; margin-top:35%">
+                <img src="image/icons8-hearts-64.png" style="margin-left: 27% ; margin-top:30%">
             </div>
             <p style="margin-left: 10px;">Made with love </p>
         </div>
         <div>
             <div id="love" class="col-lg-15">
-                <img src="image/icons8-love-potion-64 2.png" style="margin-left: 20% ; margin-top:20%">
+                <img src="image/icons8-love-potion-64 2.png" style="margin-left: 13% ; margin-top:15%; mix-blend-mode: multiply;">
             </div>
             <p style="margin-left: 30px;">Strong formulations </p>
         </div>
