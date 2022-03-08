@@ -212,10 +212,28 @@ body::-webkit-scrollbar-thumb {
 .du{
   display: flex;
   flex-wrap: wrap;
+ 
+}
+h3{
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+h4{
+ 
+/* margin-top: 100px;
+margin-right: 100px; */
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
 }
 .container {
   display: flex;
- flex-flow: wrap;   
+ flex-flow: wrap ;   
 }
 .parent{
   display: flex;

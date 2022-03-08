@@ -112,6 +112,7 @@
             <h1 style="text-align: center;margin-top:50px">Our bestseller</h1>
         </div>
         <form>
+            <div class="parent">
         <?php  
           include "conection.php";
           $sql = "SELECT * FROM `product` WHERE quantity_stock <10  ";
@@ -121,16 +122,33 @@
           $imageresult1 =  $result;
          
            while ($prd = mysqli_fetch_assoc($result)){
-               <div>
+               ?>
+             <div class="du">
+                 <?php
             $price=$prd["price"];
          
              $label=$prd["label"];
              
              $img =$prd['image'];
+             ?>
+
+             <div class="container">
+                 <?php
             echo "<img src='image/$img ?>' height=200px id=img >";
-             echo "<br> $price <br> $label  <br> ";
+            ?>
+             <!-- echo "<br> $price <br> $label  <br> "; -->
+             <br><h4> <?php echo $label  ?> </h4><br>
+             <br><h3> <?php echo  $price  ?> .£</h3><br>         
+            
+             
+             </div>
+
+             
+             </div>
+             <?php
            }
                ?>
+            </div> 
         </form>
         <button class="see-all">See All</button>
     </main>
