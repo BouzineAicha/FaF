@@ -112,7 +112,25 @@
             <h1 style="text-align: center;margin-top:50px">Our bestseller</h1>
         </div>
         <form>
+        <?php  
+          include "conection.php";
+          $sql = "SELECT * FROM `product` WHERE quantity_stock <10  ";
 
+        
+          $result = $conn->query($sql);
+          $imageresult1 =  $result;
+         
+           while ($prd = mysqli_fetch_assoc($result)){
+               <div>
+            $price=$prd["price"];
+         
+             $label=$prd["label"];
+             
+             $img =$prd['image'];
+            echo "<img src='image/$img ?>' height=200px id=img >";
+             echo "<br> $price <br> $label  <br> ";
+           }
+               ?>
         </form>
         <button class="see-all">See All</button>
     </main>

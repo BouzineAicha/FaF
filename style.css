@@ -209,6 +209,24 @@ body::-webkit-scrollbar-thumb {
     min-height: 800px;
   }
 }
+.du{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  display: flex;
+ flex-flow: wrap;   
+}
+.parent{
+  display: flex;
+  justify-content: center ;
+  flex: 1 30px;
+}
+.grid{
+  flex-wrap: wrap;
+  color: #de8678;
+
+}
 /* Formation page   */
 #registration{
   font-family: josefin sans ;
@@ -236,6 +254,15 @@ input {
   border: solid #de8678;
   border-radius: 12px;
 }
+#img{
+  border: 1px solid #DE8678;
+  margin-left: 3;
+
+}
+/* img{
+  display: grid;
+  grid-template-rows: min-content 3 ;
+} */
 #adrinut {
   margin-left: 223px;
   width: 304px;
