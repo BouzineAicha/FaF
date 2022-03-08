@@ -69,30 +69,30 @@
         </div>
 
     </header>
-    <div class="content" style="margin-left: 70px;">
+    <div class="content" style="margin-left: 106px;">
         <div>
             <div class="col-xs-15" id="rabbit">
-                <img src="image/icons8-rabbit-64.png " style="margin-left: 30% ; margin-top:30% " width="80px">
+                <img src="image/icons8-rabbit-64.png " style="margin-left: 22% ; margin-top:22% " width="80px">
             </div>
-            <p style="margin-left: 10px;">Vegan & cruelty-free</p>
+            <p style="margin-left: -117px;">Vegan & cruelty-free</p>
         </div>
         <div>
             <div id="natur" class="col-sm-15">
-                <img src="image/icons8-natural-food-50.png" style="margin-left: 35% ; margin-top:30% " width="80px">
+                <img src="image/icons8-natural-food-50.png" style="margin-left: 28% ; margin-top:25% " width="80px">
             </div>
-            <p style="margin-right: 30px;">Naturally derived ingredients</p>
+            <p style="margin-left: -124px;">Naturally derived ingredients</p>
         </div>
         <div>
             <div id="heart" class="col-md-15">
                 <img src="image/icons8-hearts-64.png" style="margin-left: 27% ; margin-top:30%">
             </div>
-            <p style="margin-left: 10px;">Made with love </p>
+            <p style="margin-left: -132px;">Made with love </p>
         </div>
         <div>
             <div id="love" class="col-lg-15">
                 <img src="image/icons8-love-potion-64 2.png" style="margin-left: 13% ; margin-top:15%; mix-blend-mode: multiply;">
             </div>
-            <p style="margin-left: 30px;">Strong formulations </p>
+            <p style="margin-left: -142px;">Strong formulations </p>
         </div>
 
     </div>

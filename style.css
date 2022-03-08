@@ -15,7 +15,7 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  /* position: absolute; */
+  position: absolute;
   bottom: 190px;
   left: 16px;
 }
@@ -28,7 +28,7 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  /* position: absolute; */
+  position: absolute;
   bottom: 95px;
   left: -425px;
 }
@@ -157,6 +157,7 @@ p {
 .ing h1 {
   font-family: Caramello Free;
   font-style: Regular;
+  color: white;
   font-size: 69px;
   line-height: 104px;
   line-height: 100%;
