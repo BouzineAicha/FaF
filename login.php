@@ -18,7 +18,7 @@
             <input id="inputs" type="text" placeholder="Username or email address *" >
             <input id="inputs" type="text" placeholder="Password *">
             <input id="inputs" type="text" placeholder="ConfirmPassword *">
-            <button style="width:270px;" id="login"class="form__button" type="submit">Log in</button> 
+            <a href="home.php"><button style="width:270px;" id="login"class="form__button" type="submit">Log in</button> </a>
             <p style="width:270px;">Don’t have an account?</p>
             <a href="Form.php"><button style="width:270px; background-color: white; color:black" id="login"class="form__button" type="submit">Register</button> </a>
         </div>
