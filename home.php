@@ -12,16 +12,16 @@
 
 <body>
     <div id="navbar">
-        <a href="javascript:void(0)" id="A">Home</a>
-        <a href="javascript:void(0)" id="B">Products</a>
-        <a href="javascript:void(0)" id="C">Ingredients</a>
+        <a href="home.php" id="A">Home </a>
+        <a href="products.php" id="B">Products</a>
+        <a href="#ingrdion" id="C">Ingredients</a>
         <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
         <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
-        <a href="javascript:void(0)" id="D">About Us</a>
-        <a href="javascript:void(0)" id="E">Contact</a>
+        <a href="" id="D">About Us</a>
+        <a href="contact.php" id="E">Contact</a>
         <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px"></a>
         <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px"></a>
-        <a href="javascript:void(0)" id="F">Login</a>
+        <a href="login.php" id="F">Login</a>
     </div>
     <script>
         window.onscroll = function() {
@@ -101,12 +101,12 @@
             <div>
                 <img src="image/nnnn 1.png" width="300px" style="margin-left: 100px; margin-top:50px">
             </div>
-            <div class="ing">
+            <div class="ing"  id="ingrdion">
                 <h1 style=" margin-top:50px; margin-left:100px ">Ingredients</h1>
-                <p style=" margin-top:50px ; margin-right:200px">We are going back to basics by<br> using ingredients everyone understands. Our formulations<br> have proven efficacy and have never been tested on animals.<br> Our beauty experts came up with a limited product range for<br> higher quality of each products.</p>
+                <p style=" margin-top:50px ; margin-right:200px; font-size:19px ">We are going back to basics by<br> using ingredients everyone understands. Our formulations<br> have proven efficacy and have never been tested on animals.<br> Our beauty experts came up with a limited product range for<br> higher quality of each products.</p>
             </div>
         </div>
-        <div class="ing">
+        <div class="ing1">
             <h1 style="text-align: center;margin-top:50px">From FAF</h1>
             <p style="text-align: center;margin-top:50px">“For a long time we have been looking to create a new different beauty brand.<br> Our beauticians use effective ingredients that everyone<br> understands ...”</p>
             <h1 style="text-align: center;margin-top:50px">Our bestseller</h1>
