@@ -133,14 +133,14 @@ body {
   }
   body::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    background: #501e27;
+    background: #CFD3DF;
   }
   @media (max-width: 720px) {
     body {
       background-size: 100% 100%;
     }
     .navbar-collapse {
-      background: #501e27;
+      background: #CFD3DF;
     }
     .para {
       min-height: 800px;
