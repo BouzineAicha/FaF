@@ -8,6 +8,23 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
 
+=======
+<div id="navbaro">
+        <a href="home.php" id="A">Home </a>
+        <a href="products.php" id="B">Products</a>
+        <a href="#ingrdion" id="C">Ingredients</a>
+
+        <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
+        <a href="" id="D">About Us</a>
+        <a href="contact.php" id="E">Contact</a>
+       
+        <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px"></a>
+        <a href="login.php" id="F">Login</a>
+    </div>
+  
+>>>>>>> 42d554af7190e5d6a3ae48a9f0c78a62df250248
 </body>
+
 </html>
