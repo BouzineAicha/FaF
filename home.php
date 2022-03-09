@@ -16,7 +16,7 @@
         <a href="products.php" id="B">Products</a>
         <a href="#ingrdion" id="C">Ingredients</a>
         <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
-        <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="80px" id="logoo"></img></a>
+        <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="60px" id="logoo"></img></a>
         <a href="" id="D">About Us</a>
         <a href="contact.php" id="E">Contact</a>
         <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px"></a>
