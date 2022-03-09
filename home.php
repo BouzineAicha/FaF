@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>FaF</title>
 </head>
 
@@ -17,7 +18,7 @@
         <a href="#ingrdion" id="C">Ingredients</a>
         <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
         <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
-        <a href="" id="D">About Us</a>
+        <a href="AboutUs.php" id="D">About Us</a>
         <a href="contact.php" id="E">Contact</a>
         <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px"></a>
         <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px"></a>
@@ -61,10 +62,10 @@
     </script>
     <header>
 
-        <div id="header" class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('image/header.jpg') ;height:100vh ;background-size: cover  ; background-repeat: no-repeat";
- ;><div>
-            <h1 class="headerp"> Discover our awesome range <br> of beauty products</h1>
-            <button  class="header">Shop Now</button>
+        <div id="header" class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('image/header.jpg') ;height:100vh ;background-size: cover  ; background-repeat: no-repeat" ; ;>
+            <div>
+                <h1 class="headerp"> Discover our awesome range <br> of beauty products</h1>
+                <button class="header">Shop Now</button>
             </div>
         </div>
 
@@ -101,7 +102,7 @@
             <div>
                 <img src="image/nnnn 1.png" width="300px" style="margin-left: 100px; margin-top:50px">
             </div>
-            <div class="ing"  id="ingrdion">
+            <div class="ing" id="ingrdion">
                 <h1 style=" margin-top:50px; margin-left:100px ">Ingredients</h1>
                 <p style=" margin-top:50px ; margin-right:200px; font-size:19px ">We are going back to basics by<br> using ingredients everyone understands. Our formulations<br> have proven efficacy and have never been tested on animals.<br> Our beauty experts came up with a limited product range for<br> higher quality of each products.</p>
             </div>
@@ -113,44 +114,46 @@
         </div>
         <form>
             <div class="parent">
-        <?php  
-          include "conection.php";
-          $sql = "SELECT * FROM `product` WHERE quantity_stock <10  ";
+                <?php
+                include "conection.php";
+                $sql = "SELECT * FROM `product` WHERE quantity_stock <10  ";
 
-        
-          $result = $conn->query($sql);
-          $imageresult1 =  $result;
-         
-           while ($prd = mysqli_fetch_assoc($result)){
-               ?>
-             <div class="du">
-                 <?php
-            $price=$prd["price"];
-         
-             $label=$prd["label"];
-             
-             $img =$prd['image'];
-             ?>
 
-             <div class="container">
-                 <?php
-            echo "<img src='image/$img ?>' height=200px id=img >";
-            ?>
-             <!-- echo "<br> $price <br> $label  <br> "; -->
-             <br><h4> <?php echo $label  ?> </h4><br>
-             <br><h3> <?php echo  $price  ?> .£</h3><br>         
-            
-             
-             </div>
+                $result = $conn->query($sql);
+                $imageresult1 =  $result;
 
-             
-             </div>
-             <?php
-           }
-               ?>
-            </div> 
+                while ($prd = mysqli_fetch_assoc($result)) {
+                ?>
+                    <div class="du">
+                        <?php
+                        $price = $prd["price"];
+
+                        $label = $prd["label"];
+
+                        $img = $prd['image'];
+                        ?>
+
+                        <div class="container">
+                            <?php
+                            echo "<img src='image/$img ?>' height=200px id=img >";
+                            ?>
+                            <!-- echo "<br> $price <br> $label  <br> "; -->
+                            <br>
+                            <h4> <?php echo $label  ?> </h4>
+
+                            <h3> <?php echo  $price  ?> .£</h3><br>
+
+
+                        </div>
+
+
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
         </form>
-        <button class="see-all">See All</button>
+       <a href="products.php"> <button class="see-all">See All</button></a>
     </main>
 </body>
 <form>

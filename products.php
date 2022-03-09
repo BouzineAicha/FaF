@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<?php include"nav.php"   ?>
 <form action="" method="POST" enctype="multipart/form-data" >
     <div class="parent">
         <div class="du">

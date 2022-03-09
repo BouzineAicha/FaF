@@ -1,8 +1,4 @@
-/* Home page */
-/* *{
-  outline: none;
-  border: none;
-} */
+
 body {
   margin: 0;
   font-size: 28px;
@@ -209,22 +205,18 @@ body::-webkit-scrollbar-thumb {
     min-height: 800px;
   }
 }
-.du{
+.du {
   display: flex;
   flex-wrap: wrap;
- 
 }
-h3{
+h3 {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
 }
-h4{
- 
-/* margin-top: 100px;
-margin-right: 100px; */
+h4 {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 300;
@@ -233,27 +225,31 @@ margin-right: 100px; */
 }
 .container {
   display: flex;
- flex-flow: wrap ;   
+  flex-flow: wrap;
+  align-items: baseline;
+  align-content: stretch;
+  flex-direction: column;
+ justify-content: space-around;
 }
-.parent{
+
+.parent {
   display: flex;
-  justify-content: center ;
-  flex: 1 30px;
+  justify-content: center;
+  justify-content: space-around;
 }
-.grid{
+.grid {
   flex-wrap: wrap;
   color: #de8678;
-
 }
-/* Formation page   */
-#registration{
-  font-family: josefin sans ;
+                              /* Formation page   */
+#registration {
+  font-family: josefin sans;
   font-size: 35px;
   font-weight: normal;
   margin-left: 20px;
 }
-#frm{
-  font-family: josefin sans ;
+#frm {
+  font-family: josefin sans;
   font-size: 25px;
   font-weight: normal;
   margin-left: 20px;
@@ -272,15 +268,11 @@ input {
   border: solid #de8678;
   border-radius: 12px;
 }
-#img{
-  border: 1px solid #DE8678;
+#img {
+  border: 1px solid #de8678;
   margin-left: 3;
-
 }
-/* img{
-  display: grid;
-  grid-template-rows: min-content 3 ;
-} */
+
 #adrinut {
   margin-left: 300px;
   width: 304px;
@@ -289,8 +281,8 @@ input {
 ::placeholder {
   color: #9b9b9b;
 }
-#register{
-  background-color: #cfcedc ;
+#register {
+  background-color: #cfcedc;
   border-style: none;
   font-size: 15px;
   font-family: josefin sans;
@@ -299,9 +291,6 @@ input {
   align-items: center;
   margin-left: 594px;
 }
-
-
-
 
 .header {
   margin-top: 50px;
@@ -326,7 +315,7 @@ input {
   width: 172px;
   height: 50px;
 }
-/* fooooooooooooooter */
+                                   /* fooooooooooooooter */
 .mapouter {
   margin-top: 5%;
 }
@@ -335,7 +324,7 @@ input {
   margin: 0;
   padding: 0;
 }
-#locat{
+#locat {
   font-family: josefin sans;
   font-size: 35px;
 }
@@ -343,19 +332,14 @@ input {
   display: flex;
   height: 100vh;
 }
-#policy{
+#policy {
   font-family: josefin sans;
   font-size: 16px;
 }
 
-
-
-
-
-
 #inputs {
   width: 100%;
-  padding: 12px  139px;
+  padding: 12px 139px;
   margin: 15px 0;
   display: inline-block;
   border: 1px solid rgb(255, 255, 255);
@@ -366,10 +350,9 @@ input {
   font-size: 28px;
   border: 1px solid #000000;
 }
-#inputs ::placeholder{
+#inputs ::placeholder {
   color: #de8678;
 }
-
 
 #login {
   width: 100%;
@@ -405,3 +388,39 @@ p {
   margin: 0;
   padding: 0;
 }
+                                    /* About Us */
+.about{
+  position: relative;
+
+ 
+    width: 221vh;
+  height:100vh;
+  display: flex;
+  background: linear-gradient(180deg, #AFB9D5 0%, #FAECEA 0.01%, #FFFFFF 14.58%, #D0D4E0 100%);
+
+}
+.aboutUs p{
+  margin-left: 10px;
+  margin-right: 30px;
+  font-size: 25px;
+ 
+  font-weight: 300;
+ text-align: justify;
+ line-height: 36px;
+}
+.aboutUs h1{
+  margin-left: 20px;
+}
+.aboutimg{
+  margin-top: 100px;
+  margin-right: 50px;
+}
+span{
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+
