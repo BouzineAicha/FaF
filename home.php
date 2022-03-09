@@ -18,9 +18,6 @@
         <a href="#ingrdion" id="C">Ingredients</a>
         <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
 
-        <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
-        <a href="AboutUs.php" id="D">About Us</a>
-
         <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="60px" id="logoo"></img></a>
         <a href="" id="D">About Us</a>
 

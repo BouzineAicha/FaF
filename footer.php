@@ -15,7 +15,7 @@
         <p style="font-size:20px;">446 Ramblewood St. Gurnee, IL 60031</p>
     </div>
     <div class="logos">
-        <img src="image/logo.png" >
+        <img src="image/logo_dark.png" >
         <div  style=" justify-content:space-around; margin:30px ">
             <img src="image/facebook-square.png" >
             <img src="image/Vector.png" >
