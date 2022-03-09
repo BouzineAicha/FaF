@@ -122,6 +122,7 @@ p {
 }
 .logo2:hover {
   color: #cfcedc;
+  color: #9d99ce;
 }
 #rabbit {
   background-color: #faecea;
@@ -292,7 +293,7 @@ input {
 
 
 .header {
-  margin-top: 463px;
+  margin-top: 65px;
   margin-left: -795px;
   border-radius: 10px;
   background-color: #cfd3df;
