@@ -9,15 +9,10 @@
 <body>
 <?php
                 include "conection.php";
-                $result = $conn->query($sql);
-                $imageresult1 =  $result;
+               
+                if (isset($id=$_REQUEST["ID_product"])) {
 
-                $price = $prd["price"];
-
-                $label = $prd["label"];
-
-                $img = $prd['image'];
-       $sql = "SELECT `ID_product`, `label`, `prod_description`, `price`, `quantity_stock`, `image` FROM `product` WHERE ID_product='$id';"
+                }
        ?>
 </body>
 </html>
