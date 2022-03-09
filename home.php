@@ -17,8 +17,13 @@
         <a href="products.php" id="B">Products</a>
         <a href="#ingrdion" id="C">Ingredients</a>
         <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
+<<<<<<< HEAD
         <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
         <a href="AboutUs.php" id="D">About Us</a>
+=======
+        <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="60px" id="logoo"></img></a>
+        <a href="" id="D">About Us</a>
+>>>>>>> e823f6170bfa00eec5817cc32f7c7316415e7b3a
         <a href="contact.php" id="E">Contact</a>
         <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px"></a>
         <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px"></a>
@@ -91,7 +96,7 @@
         </div>
         <div>
             <div id="love" class="col-lg-15">
-                <img src="image/icons8-love-potion-64 2.png" style="margin-left: 13% ; margin-top:15%; mix-blend-mode: multiply;">
+                <img src="image/icons8-love-potion.png " style="margin-left: 13% ; margin-top:15%;">
             </div>
             <p style="margin-left: -142px;">Strong formulations </p>
         </div>
@@ -113,6 +118,7 @@
             <h1 style="text-align: center;margin-top:50px">Our bestseller</h1>
         </div>
         <form>
+<<<<<<< HEAD
             <div class="parent">
                 <?php
                 include "conection.php";
@@ -152,6 +158,27 @@
                 }
                 ?>
             </div>
+=======
+        <?php  
+          include "conection.php";
+          $sql = "SELECT * FROM `product` WHERE quantity_stock <10  ";
+
+        
+          $result = $conn->query($sql);
+          $imageresult1 =  $result;
+         
+           while ($prd = mysqli_fetch_assoc($result)){
+               
+            $price=$prd["price"];
+         
+             $label=$prd["label"];
+             
+             $img =$prd['image'];
+            echo "<img src='image/$img ?>' height=200px id=img >";
+             echo "<br> $price <br> $label  <br> ";
+           }
+               ?>
+>>>>>>> e823f6170bfa00eec5817cc32f7c7316415e7b3a
         </form>
        <a href="products.php"> <button class="see-all">See All</button></a>
     </main>

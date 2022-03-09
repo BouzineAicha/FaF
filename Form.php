@@ -16,7 +16,7 @@
 <br><br>
 <div class="line"></div>
 <form>
-
+<br>
 <h2 id="frm">Full name</h2> <input type="text" placeholder=" First Name"><br><br><input type="text" placeholder=" Last Name"><br><br>
 <h2 id="frm"> number</h2> <input type="text"placeholder=" Enter aphone number"><br><br>
 <h2 id="frm">E-mail</h2><input type="text"placeholder=" Enter an email"><br><br>
@@ -27,6 +27,8 @@
         <input type="text" id="adrinut" placeholder=" Postalcode"><input type="texr" id="adrinut" placeholder="Country"><br> <br>
  </div>
         <button id="register"> Register </button>
+
+        <br><br><br><br>
 
 
 
