@@ -14,14 +14,16 @@ body {
   font-family: Caramello Free;
   font-style: Regular;
   color: white;
-  font-size: 39px;
+  font-size: 41px;
   line-height: 74px;
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  position: absolute;
+  margin-left: -790px;
+  margin-top: 283px;
+  /* position: absolute;
   bottom: 190px;
-  left: 16px;
+  left: 16px; */
 }
 .header {
   font-family: Josefin Sans;
@@ -32,9 +34,9 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  position: absolute;
+  /* position: absolute;
   bottom: 95px;
-  left: -425px;
+  left: -425px; */
 }
 
 .bottom-left {
@@ -78,7 +80,7 @@ body {
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 7px 49px;
+  padding: 7px 47px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -87,7 +89,7 @@ body {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 7px 49px;
+  padding: 7px 47px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -286,8 +288,8 @@ input {
 
 
 .header {
-  margin-top: 50px;
-  margin-left: 45%;
+  margin-top: 463px;
+  margin-left: -795px;
   border-radius: 10px;
   background-color: #cfd3df;
   border: solid white;

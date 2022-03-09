@@ -16,7 +16,7 @@
         <a href="products.php" id="B">Products</a>
         <a href="#ingrdion" id="C">Ingredients</a>
         <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
-        <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
+        <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="80px" id="logoo"></img></a>
         <a href="" id="D">About Us</a>
         <a href="contact.php" id="E">Contact</a>
         <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px"></a>
@@ -90,7 +90,7 @@
         </div>
         <div>
             <div id="love" class="col-lg-15">
-                <img src="image/icons8-love-potion-64 2.png" style="margin-left: 13% ; margin-top:15%; mix-blend-mode: multiply;">
+                <img src="image/icons8-love-potion.png " style="margin-left: 13% ; margin-top:15%;">
             </div>
             <p style="margin-left: -142px;">Strong formulations </p>
         </div>
@@ -121,7 +121,7 @@
           $imageresult1 =  $result;
          
            while ($prd = mysqli_fetch_assoc($result)){
-               <div>
+               
             $price=$prd["price"];
          
              $label=$prd["label"];
