@@ -139,9 +139,9 @@
                             ?>
                             <!-- echo "<br> $price <br> $label  <br> "; -->
                             <br>
-                            <h4> <?php echo $label  ?> </h4>
+                            <h4 id="labulo"> <?php echo $label  ?> </h4>
 
-                            <h3> <?php echo  $price  ?> .£</h3><br>
+                            <h3 id="pricu"> <?php echo  $price  ?> .£</h3><br>
 
 
                         </div>

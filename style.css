@@ -227,6 +227,14 @@ h4 {
   font-size: 24px;
   line-height: 24px;
 }
+#labulo{
+  margin-top: 19px;
+  margin-left: 7px;
+}
+#pricu{
+  margin-top: 16px;
+  margin-left: 68px;
+}
 /* .container {
   display: flex;
   flex-flow: wrap;
@@ -327,11 +335,10 @@ input {
   font-style: Regular;
   font-size: 24px;
   background-color: #faecea;
-  border-radius: 12px;
   margin-left: 45%;
   border-radius: 10px;
   background-color: #faecea;
-  border: solid black;
+  border: solid black 1px;
   width: 172px;
   height: 50px;
 }
