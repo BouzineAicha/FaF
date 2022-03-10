@@ -13,7 +13,7 @@
         <a href="products.php" id="B">Products</a>
         <a href="home.php" id="C">Ingredients</a>
 
-        <a href="#" id="logoo"><img src="image/logo.png" class="logo" height="80px" id="logoo"></img></a>
+        <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="60px" id="logoo"></img></a>
         <a href="AboutUs.php" id="D">About Us</a>
         <a href="contact.php" id="E">Contact</a>
        
