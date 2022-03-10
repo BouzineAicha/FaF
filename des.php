@@ -7,12 +7,31 @@
     <title></title>
 </head>
 <body>
+    <?php 
+                include "conection.php" ?>
+<form action="des.php" method="POST" enctype="multipart/form-data">
 <?php
-                include "conection.php";
-               
-                if (isset($id=$_REQUEST["ID_product"])) {
+                // $select = mysqli_query($conn, "SELECT * FROM `product`");
+                // $prd = mysqli_fetch_assoc($select);  
+                // $price = $prd["price"];
+                // $label = $prd["label"];
+                
+                
+                if (isset($_REQUEST["ID_product"])) {
+                    $id = $_REQUEST['ID_product'];
+                    $sql = "SELECT * FROM `product `WHERE ID_product ='$id' ";  
 
-                }
-       ?>
+                    $result =$conn->query($sql);
+                    $prd = mysqli_fetch_assoc($result);  
+                    // $img = mysqli_fetch_assoc($result)['image'];
+                    //  echo "<img src='image/$img ' id=img >";      
+                    
+                    
+                }    
+                // echo "<br>".$prd['ID_product']."<br>".$prd["price"] ." <br>".$prd["label"]."<br>" .$prd["prod_description"];
+              
+ ?>
+
+    </form>
 </body>
 </html>

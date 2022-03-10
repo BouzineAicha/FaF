@@ -29,13 +29,15 @@
            <?php
             
             
-            $img = $prd['image'];
+            $img = mysqli_fetch_assoc($result)['image'];
             $label=$prd["label"]; 
             $price=$prd["price"];
             ?>
              </div>
             <div class="container">
-             <?php echo "<img src='image/$img ?>' height=200px id=img >"?> <br>
+              <?php 
+              echo "<a href = 'des.php?ID_product =" . $prd['ID_product']. "'><img src=' image/$img.'height=200px id=img ></a>";
+              ?> <br>
             <h4><?php echo  $label?> </h4><br>
             <h4><?php echo  $price?> </h4><br>
             </div>
