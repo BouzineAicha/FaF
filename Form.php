@@ -13,7 +13,7 @@ if (isset($_POST["submit"])) {
 
 
     // $sql = "INSERT INTO `client` (ID_client, FirstName, LastName, client_address, phone, email, c_password) 
-    $sql = "INSERT INTO `client` ( FirstName, LastName, phone, email, c_password, client_address) 
+    $sql = "INSERT INTO `client` ( FirstName, LastName,,client_address,  phone ,email , c_password) 
     VALUES ('$first','$last','$phone','$email','$password','$adress');";
     $result = $conn->query($sql);
     
