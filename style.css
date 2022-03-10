@@ -263,6 +263,7 @@ h4 {
   font-size: 25px;
   font-weight: normal;
   margin-left: 20px;
+  /* margin-top: 20px; */
 }
 .line {
   margin-left: 50px;
@@ -283,11 +284,11 @@ input {
   margin-left: 3;
 }
 
-#adrinut {
+/* #adrinut {
   margin-left: 300px;
   width: 304px;
   height: 50px;
-}
+} */
 ::placeholder {
   color: #9b9b9b;
 }
@@ -300,6 +301,11 @@ input {
   height: 40px;
   align-items: center;
   margin-left: 594px;
+}
+#register:hover{
+  background-color: #9c9ab6;
+  width: 115px;
+  height: 45px;
 }
 
 .header {
@@ -348,16 +354,17 @@ input {
 }
 
 #inputs {
-  width: 100%;
-  padding: 12px 139px;
+  width: 85%;
+  /* padding: 12px 139px; */
   margin: 15px 0;
+  margin-left: 28px;
   display: inline-block;
   border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
   font-family: Josefin Sans;
   font-style: Regular;
-  color: white;
-  font-size: 28px;
+  /* color: white; */
+  font-size: 16px;
   border: 1px solid #000000;
 }
 #inputs ::placeholder {
@@ -368,8 +375,9 @@ input {
   width: 100%;
   background-color: #000000;
   color: white;
-  padding: 14px 20px;
+  padding: 6px 20px;
   margin: 8px 0;
+  margin-left: 55px;
   border: none;
   cursor: pointer;
 }
@@ -433,7 +441,7 @@ span{
                                     /* product page */
 #lab{
   margin-bottom: -1.5rem;
-  /* margin-left: 30px; */
+  margin-left: -17px;
 }
 #contain{
   border-color: black solid 2px;
@@ -443,5 +451,13 @@ h6{
 }
 #he3{
   margin-top: 30px;
-  margin-left: 92px;
+  margin-left: -6px;
+}
+#prod{
+  /* margin-left: 300px; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  /* align-content: stretch; */
+  align-items: center;
 }

@@ -1,3 +1,33 @@
+<?php
+
+include 'conection.php';
+if (isset($_POST["submit"])) {
+    
+    $first = $_POST["FirstName"];
+    $last = $_POST["LastName"];
+    $phone = $_POST["phone"];
+    $email = $_POST["email"];
+    $password = $_POST["c_password"];
+    $adress = $_POST["client_address"];
+    
+
+
+    // $sql = "INSERT INTO `client` (ID_client, FirstName, LastName, client_address, phone, email, c_password) 
+    $sql = "INSERT INTO `client` ( FirstName, LastName, phone, email, c_password, client_address) 
+    VALUES ('$first','$last','$phone','$email','$password','$adress');";
+    $result = $conn->query($sql);
+    
+    if ($result) {
+        echo "successful !!!!";
+        // header('location: index.php');
+    } else {
+        echo "no no no ";
+        die(mysqli_error($conn));
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +43,25 @@
     <?php include"nav.php"   ?>
   
 <h1 id="registration">Registration form</h1>
-<br><br>
+
 <div class="line"></div>
-<form>
+<form action="Form.php" method="POST" >
 
-<h2 id="frm">Full name</h2> <input type="text" placeholder=" First Name"><br><br><input type="text" placeholder=" Last Name"><br><br>
-<h2 id="frm"> number</h2> <input type="text"placeholder=" Enter aphone number"><br><br>
-<h2 id="frm">E-mail</h2><input type="text"placeholder=" Enter an email"><br><br>
-
- <h2 id="frm">Password</h2><input type="password" placeholder=" Enter a password"><br><br><br><input type="password"placeholder="Reenter password"><br><br>
+<h2 id="frm">Full name</h2>
+ <input type="text" placeholder=" First Name" name="FirstName"><br><br><input type="text" placeholder=" Last Name" name="LastName"><br><br>
+<h2 id="frm"> number</h2>
+ <input type="text"placeholder=" Enter a phone number" name="phone"><br><br>
+<h2 id="frm">E-mail</h2>
+<input type="text"placeholder=" Enter an email" name="email"><br><br>
+ <h2 id="frm">Password</h2>
+ <input type="password" placeholder=" Enter a password" name="client_address"><br><br><br><input type="password"placeholder="Reenter password"><br><br>
  <h2 id="frm">Address</h2> 
-<input type="text"  id="adrinut" placeholder=" Address"><input type="text" id="adrinut" placeholder=" Street address"><br><br><br>
-        <input type="text" id="adrinut" placeholder=" Postalcode"><input type="texr" id="adrinut" placeholder="Country"><br> <br>
+<input type="text"  placeholder=" Address" name="c_password" >
+       
  </div>
-        <button id="register"> Register </button>
-
+ <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" id="register" name="submit"> Register </button><br><br>
+        <p>Already have an account? <a href="login.php">Sign in</a>.</p>
 
 
 
