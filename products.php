@@ -31,7 +31,7 @@
            <?php
             
             
-            $img = $prd['image'];
+            $img = mysqli_fetch_assoc($result)['image'];
             $label=$prd["label"]; 
             $price=$prd["price"];
             ?>
