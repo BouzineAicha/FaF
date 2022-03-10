@@ -135,7 +135,7 @@
 
                         <div class="container">
                             <?php
-                            echo "<a href = 'des.php?ID_product =" . $prd['ID_product']. "'><img src=' image/$img.'height=200px id=img ></a>";
+                            echo "<a href = 'des.php?ID_product=" . $prd['ID_product']. "'><img src='image/$img'"."height=200px id='img'></a>";
                             ?>
                             <!-- echo "<br> $price <br> $label  <br> "; -->
                             <br>
