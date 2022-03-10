@@ -19,6 +19,7 @@ if (isset($_POST["submit"])) {
     
     if ($result) {
         echo "successful !!!!";
+        echo "client registred";
         // header('location: index.php');
     } else {
         echo "no no no ";

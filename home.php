@@ -91,7 +91,7 @@
         </div>
         <div>
             <div id="love" class="col-lg-15">
-                <img src="image/icons8-love-potion-64 2.png" style="margin-left: 13% ; margin-top:15%; mix-blend-mode: multiply;">
+                <img src="image/potion.png" style="margin-left: 13% ; margin-top:15%">
             </div>
             <p style="margin-left: -142px;">Strong formulations </p>
         </div>
@@ -139,9 +139,9 @@
                             ?>
                             <!-- echo "<br> $price <br> $label  <br> "; -->
                             <br>
-                            <h4> <?php echo $label  ?> </h4>
+                            <h4 id="labulo"> <?php echo $label  ?> </h4>
 
-                            <h3> <?php echo  $price  ?> .£</h3><br>
+                            <h3 id="pricu"> <?php echo  $price  ?> .£</h3><br>
 
 
                         </div>

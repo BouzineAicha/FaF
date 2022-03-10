@@ -15,9 +15,13 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  position: absolute;
+  margin-top: 449px;
+  margin-left: -797px;
+  margin-top: 275px;
+  margin-left: -797px;
+  /* position: absolute;
   bottom: 190px;
-  left: 16px;
+  left: 16px; */
 }
 .header {
   font-family: Josefin Sans;
@@ -28,9 +32,9 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  position: absolute;
+  /* position: absolute;
   bottom: 95px;
-  left: -425px;
+  left: -425px; */
 }
 
 .bottom-left {
@@ -223,6 +227,14 @@ h4 {
   font-size: 24px;
   line-height: 24px;
 }
+#labulo{
+  margin-top: 19px;
+  margin-left: 7px;
+}
+#pricu{
+  margin-top: 16px;
+  margin-left: 68px;
+}
 /* .container {
   display: flex;
   flex-flow: wrap;
@@ -309,8 +321,8 @@ input {
 }
 
 .header {
-  margin-top: 50px;
-  margin-left: 45%;
+  margin-top: 37px;
+  margin-left: -797px;
   border-radius: 10px;
   background-color: #cfd3df;
   border: solid white;
@@ -323,11 +335,10 @@ input {
   font-style: Regular;
   font-size: 24px;
   background-color: #faecea;
-  border-radius: 12px;
   margin-left: 45%;
   border-radius: 10px;
   background-color: #faecea;
-  border: solid black;
+  border: solid black 1px;
   width: 172px;
   height: 50px;
 }
