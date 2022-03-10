@@ -472,3 +472,92 @@ h6{
   /* align-content: stretch; */
   align-items: center;
 }
+
+                                    /* description page */
+
+
+.decription{
+
+  display: flex;
+  justify-content:space-between ;
+}
+.foto{
+
+position: absolute;
+width: 347px;
+height: 672px;
+margin-left: 100px;
+
+}
+
+.des{
+  position: absolute;
+width: 486px;
+height: 220px;
+left: 519px;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 31px;
+line-height: 31px;
+}
+.des h1{
+  /* position: absolute; */
+/* width: 392px;
+height: 97px; */
+left: 519px;
+/* top: 161px; */
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 47px;
+line-height: 47px;
+}
+#add-to-cart{
+  /* margin-top: 30px; */
+  font-family: josefin sans;
+  font-style: normal;
+  background-color: white;
+  border-style: none;
+  border-radius: 10px;
+  border: #de8678 solid 2px;
+  color: black;
+  height: 52px;
+  width: 154px;
+  font-size: 20px;
+}
+#add-to-cart:hover{
+  height: 54px;
+  width: 156px;
+  background-color: #de8678;
+  color: white;
+  font-size: 22px;
+  
+}
+#buy{
+  /* margin-top: 30px; */
+  font-family: josefin sans;
+  font-style: normal;
+  background-color: white;
+  border-style: none;
+  border-radius: 10px;
+  border: #de8678 solid 2px;
+  color: black;
+  height: 52px;
+  width: 110px;
+  font-size: 20px;
+}
+#buy:hover{
+  height: 54px;
+  width: 112px;
+  background-color: #de8678;
+  color: white;
+  font-size: 22px;
+}
+.btns{
+  margin-top: 443px;
+  margin-left: 753px;
+}
+#demoInput{
+  width: 70px;
+}

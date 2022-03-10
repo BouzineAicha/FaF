@@ -36,9 +36,9 @@
             $price=$prd["price"];
             ?>
              
-            
+            <!-- echo "<img src='image/$img ' id=img >" -->
               <div id="prod" class="product col-lg-4 col-md-6" >
-                <?php echo "<img src='image/$img ' id=img >"?> <br>
+                <?php echo "<a href = 'des.php?ID_product=" . $prd['ID_product']. "'><img src=' image/$img.'height=200px id=img ></a>"; ?> <br>
                <h6 id="lab"><?php echo  $label?> </h6>
                 <h3 id="he3"><?php echo  $price?> </h3><br>
               </div>
