@@ -223,19 +223,29 @@ h4 {
   font-size: 24px;
   line-height: 24px;
 }
-.container {
+/* .container {
   display: flex;
   flex-flow: wrap;
   align-items: baseline;
   align-content: stretch;
   flex-direction: column;
  justify-content: space-around;
-}
+} */
 
 .parent {
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+.parent .product img{
+  width: 200px;
+  height: 260px;
+}
+.parent .product h5{
+  /* border: 2px solid tomato; */
+  font-family: josefin sans;
+  padding: 5px;
 }
 .grid {
   flex-wrap: wrap;
@@ -391,9 +401,7 @@ p {
                                     /* About Us */
 .about{
   position: relative;
-
- 
-    width: 221vh;
+  width: 221vh;
   height:100vh;
   display: flex;
   background: linear-gradient(180deg, #AFB9D5 0%, #FAECEA 0.01%, #FFFFFF 14.58%, #D0D4E0 100%);
@@ -422,5 +430,15 @@ span{
 }
 
 
-
+                                    /* product page */
+#lab{
+  margin-bottom: -1.5rem;
+  /* margin-left: 30px; */
+}
+#contain{
+  border-color: black solid 2px;
+}
+h6{
+  margin-left: 20px;
+}
 
