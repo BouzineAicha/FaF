@@ -15,9 +15,9 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  position: absolute;
+  /* position: absolute;
   bottom: 190px;
-  left: 16px;
+  left: 16px; */
 }
 .header {
   font-family: Josefin Sans;
@@ -28,9 +28,9 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
-  position: absolute;
+  /* position: absolute;
   bottom: 95px;
-  left: -425px;
+  left: -425px; */
 }
 
 .bottom-left {
@@ -309,8 +309,8 @@ input {
 }
 
 .header {
-  margin-top: 50px;
-  margin-left: 45%;
+  margin-top: 449px;
+  margin-left: -797px;
   border-radius: 10px;
   background-color: #cfd3df;
   border: solid white;
