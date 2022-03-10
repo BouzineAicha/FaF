@@ -15,6 +15,10 @@ body {
   line-height: 100%;
   text-align: 100px 50px;
   vertical-align: Top;
+  margin-top: 449px;
+  margin-left: -797px;
+  margin-top: 275px;
+  margin-left: -797px;
   /* position: absolute;
   bottom: 190px;
   left: 16px; */
@@ -309,7 +313,7 @@ input {
 }
 
 .header {
-  margin-top: 449px;
+  margin-top: 37px;
   margin-left: -797px;
   border-radius: 10px;
   background-color: #cfd3df;
