@@ -38,6 +38,10 @@
         }
         // echo "<br>".$prd['ID_product']."<br>".$prd["price"] ." <br>".$prd["label"]."<br>" .$prd["prod_description"];
         ?>
+            <!-- $img = $prd['image'] ;
+            $label=$prd["label"];
+            $price=$prd["price"]; -->
+         
         <div class="decription">
             <div class="foto">
                 <?php $img = $prd['image'] ?>
