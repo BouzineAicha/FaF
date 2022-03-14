@@ -18,7 +18,7 @@
     <?php
     include "conection.php" ?>
     <form action="des.php" method="POST" enctype="multipart/form-data">
-        <a href="home.php" style="margin-left: 20px  "><img src="image/vectory.png" width="40px" style="padding-top:20px ; "></a>
+        <a href="products.php" style="margin-left: 20px  "><img src="image/vectory.png" width="40px" style="padding-top:20px ; "></a>
         <?php
         // $select = mysqli_query($conn, "SELECT * FROM `product`");
         // $prd = mysqli_fetch_assoc($select);  
