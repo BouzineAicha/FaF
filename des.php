@@ -48,9 +48,9 @@
                 <p><?php echo $prd["prod_description"] ?></p>
                 <h3>Price : <?php echo $prd["price"] ?>£</h3>
                 <h3>QTY:
-                    <button id="" onclick="increment()">+</button>
-                    <input id=demoInput type=number min=0 max=30>
-                    <button onclick="decrement()">-</button>
+                    <button id="inc" onclick="increment()">+</button>
+                    <input id="demoInput" type=number min=0 max=30>
+                    <button id="dec" onclick="decrement()">-</button>
                     <script>
                         function increment() {
                             document.getElementById('demoInput').stepUp();

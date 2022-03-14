@@ -555,9 +555,26 @@ line-height: 47px;
   font-size: 22px;
 }
 .btns{
-  margin-top: 553px;
+  margin-top: 450px;
   margin-left: 753px;
 }
 #demoInput{
   width: 70px;
+  margin-left: 0px;
+}
+#inc{
+  background-color: #de8678;
+  color: black;
+  border-style: none;
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+}
+#dec{
+  background-color: #de8678;
+  color: black;
+  border-style: none;
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
 }
