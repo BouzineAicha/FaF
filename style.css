@@ -461,8 +461,8 @@ h6{
   margin-left: 20px;
 }
 #he3{
-  margin-top: 30px;
-  margin-left: -6px;
+  margin-top: 42px;
+  margin-left: -90px;
 }
 #prod{
   /* margin-left: 300px; */
@@ -472,6 +472,11 @@ h6{
   /* align-content: stretch; */
   align-items: center;
 }
+#addd{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 
                                     /* description page */
 

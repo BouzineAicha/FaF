@@ -1,3 +1,6 @@
+<?php 
+    global $prd ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,11 +29,15 @@
         // $label = $prd["label"];
 
 
-        if (isset($_REQUEST["ID_product"])) {
+        if ( $prd != null && isset($_REQUEST["ID_product"])) {
             $id = $_REQUEST['ID_product'];
             $sql = "SELECT *FROM `product`WHERE ID_product ='$id'";
             $result = $conn->query($sql);
             $prd = mysqli_fetch_assoc($result);
+            echo "<pre>" ;
+                var_dump($prd) ;
+            echo "</pre>" ;
+            // die() ;
             // $img = mysqli_fetch_assoc($result)['image'];
             //  echo "<img src='image/$img ' id=img >";      
 
@@ -44,7 +51,14 @@
          
         <div class="decription">
             <div class="foto">
-                <?php $img = $prd['image'] ?>
+                <?php
+                    echo "<pre>" ;
+                        var_dump($prd) ;
+                    echo "</pre>" ;
+                    // die() ;
+                $img = $prd['image']
+
+                ?>
                 <?php echo "<img src='image/$img ' id='img'  height=300px  >" ?>
             </div>
             <div class="des">
