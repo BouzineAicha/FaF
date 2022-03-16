@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <?php include "nav.php";  
   if (!empty($product_array)) { 
     foreach($product_array as $key=>$value){
@@ -28,6 +29,9 @@
   <?php
     }
    } ?>
+=======
+  <?php include "nav.php"   ?>
+>>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   <div id="lol" class="lable" style="display: flex; justify-content:space-around; font-family: Caramello Free;  margin-top:40px">
           <h2>Skincare</h2>
           <h2>Make up</h2>
@@ -39,7 +43,11 @@
 
       <?php
       include "conection.php";
+<<<<<<< HEAD
       $sql = "SELECT * FROM product  ";
+=======
+      $sql = "SELECT * FROM `product`  ";
+>>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
 
 
       $result = $conn->query($sql);
@@ -50,20 +58,33 @@
       while ($prd = mysqli_fetch_assoc($result)) {
 
       ?>
+<<<<<<< HEAD
 <?php
+=======
+
+        <?php
+>>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
 
 
         $img = $prd['image'];
         $label = $prd["label"];
         $price = $prd["price"];
         ?>
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
         <!-- echo "<img src='image/$img ' id=img >" -->
         <div id="prod" class="product col-lg-4 col-md-6">
           <?php echo "<a href = 'des.php?ID_product=" . $prd['ID_product'] . "'><img src=' image/$img.'height=200px id=img ></a>"; ?> <br>
           <h6 id="lab"><?php echo  $label ?> </h6>
+<<<<<<< HEAD
           <h3 id="he3"><?php echo  $price ?>£  &nbsp; <button  style="position: absolute;width: 37px;height: 30px;background: #FFFFFF;border: 1px solid #DE8678;box-sizing: border-box;border-radius: 14px;" name="quantity_order"><a href="add-to-cart.php">+</a></button><br> </h3> <br>
          
+=======
+          <h3 id="he3"><?php echo  $price ?> £ <img src="image/check-to-slot-solid2.png " id="addd" height=20px > </h3><br>
+>>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
         </div>
 
 
