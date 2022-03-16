@@ -11,7 +11,7 @@
     <?php
     include "nav.php";
 include "conection.php" ;
-$sql = "SELECT * FROM product "&&"SELECT * FROM detail_order";
+$sql = "SELECT * FROM product "and"SELECT * FROM detail_order";
 $result = $conn->query($sql);
 $imageresult1 =  $result;
 while ($row = mysqli_fetch_assoc($result)) {
