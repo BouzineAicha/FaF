@@ -10,13 +10,16 @@
 <body>
     <?php
     include "nav.php";
+    ?>
+
+<h1 class="addtocartp"> Summary Of The Article</h1>
+    <?php
 include "conection.php" ;
-$sql = "SELECT * FROM product "&&"SELECT * FROM detail_order";
+$sql = "SELECT * FROM product  WHERE quantity_stock <9 " ;
 $result = $conn->query($sql);
 $imageresult1 =  $result;
 while ($row = mysqli_fetch_assoc($result)) {
 ?>
-<h1 class="addtocartp"> Summary Of The Article</h1>
 <main>
 <table >
     <thead>
@@ -35,7 +38,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         <td><?php echo $row["quantity_order"]?></td>
         <td><?php echo $row["subtotal"]?></td>
         <td>60£</td>
-        <td><?php echo $row["total"]?></td>
+        <td><?php echo $row["subtotal"]+60?></td>
        
     </tr>
 <tr>
