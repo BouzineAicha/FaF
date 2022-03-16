@@ -9,24 +9,36 @@ if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $password = $_POST["c_password"];
     $adress = $_POST["client_address"];
-    
 
-
-    // $sql = "INSERT INTO `client` (ID_client, FirstName, LastName, client_address, phone, email, c_password) 
-    $sql = "INSERT INTO `client` ( FirstName, LastName,,client_address,  phone ,email , c_password) 
-    VALUES ('$first','$last','$phone','$email','$password','$adress');";
-    $result = $conn->query($sql);
-    
-    if ($result) {
-        echo "successful !!!!";
-        echo "client registred";
-        // header('location: index.php');
-    } else {
-        echo "no no no ";
-        die(mysqli_error($conn));
-    }
+  
+ 
+    $valid = 0;
+   
+    $checkUserId = mysqli_query($conn, "SELECT `email` FROM `client` WHERE email ='$email'");
+    if (mysqli_num_rows($checkUserId) > 0) {
+    echo  "<p style=\"color: red;\">this email is already used</p>";
+    $valid++;
 }
+$checkPhone = mysqli_query($conn, "SELECT phone from `client` WHERE phone = '$phone'");
+if (mysqli_num_rows($checkPhone) > 0) {
+echo  "<p style=\"color: red;\">this phone number is already used</p>";
+$valid++;
+}
+if($valid == 0){
+  $sql = "INSERT INTO `client` (FirstName, LastName,client_address,  phone ,email , c_password)  VALUES ('$first ',' $last','$adress','$phone', '$email', '$password')";
+  $query = mysqli_query($conn,$sql);
+  header("Location: home.php");
+  exit(); 
+  mysqli_close($conn);
+}
+if ( $query) {
+    echo "successful !!!!";
 
+} else {
+    echo "oh no no no ";
+    die(mysqli_error($conn));
+}
+}
 ?>
 
 <!DOCTYPE html>
@@ -50,15 +62,15 @@ if (isset($_POST["submit"])) {
 
 <h2 id="frm">Full name</h2>
  <input type="text" placeholder=" First Name" name="FirstName"><br><br><input type="text" placeholder=" Last Name" name="LastName"><br><br>
+ <h2 id="frm">Address</h2> 
+ <input type="text"  placeholder=" Address" name="client_address" >
+       
 <h2 id="frm"> number</h2>
  <input type="text"placeholder=" Enter a phone number" name="phone"><br><br>
 <h2 id="frm">E-mail</h2>
 <input type="text"placeholder=" Enter an email" name="email"><br><br>
  <h2 id="frm">Password</h2>
- <input type="password" placeholder=" Enter a password" name="client_address"><br><br><br><input type="password"placeholder="Reenter password"><br><br>
- <h2 id="frm">Address</h2> 
-<input type="text"  placeholder=" Address" name="c_password" >
-       
+ <input type="password" placeholder=" Enter a password" name="c_password"><br><br><br>
  </div>
  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
         <button type="submit" id="register" name="submit"> Register </button><br><br>
