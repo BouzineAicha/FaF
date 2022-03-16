@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>&&
+</head>
 <body>
     <?php
     include "nav.php";
 include "conection.php" ;
-$sql = "SELECT * FROM product ""SELECT * FROM detail_order";
+$sql = "SELECT * FROM product "&&"SELECT * FROM detail_order";
 $result = $conn->query($sql);
 $imageresult1 =  $result;
 while ($row = mysqli_fetch_assoc($result)) {
