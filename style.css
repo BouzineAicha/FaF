@@ -435,20 +435,13 @@ span {
 h6 {
   margin-left: 20px;
 }
-<<<<<<< HEAD
 #he3 {
   margin-top: 30px;
   margin-left: -6px;
-=======
-#he3{
-  margin-top: 42px;
-  margin-left: -90px;
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
 }
 #prod {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
    align-items: center;
 }
 
@@ -485,59 +478,6 @@ h6 {
 }
 #add-to-cart {
   margin-top: 30px;
-=======
-  /* align-content: stretch; */
-  align-items: center;
-}
-#addd{
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-
-                                    /* description page */
-
-
-.decription{
-
-  display: flex;
-  justify-content:space-between ;
-}
-.foto{
-
-position: absolute;
-width: 347px;
-height: 672px;
-margin-left: 100px;
-
-}
-
-.des{
-  position: absolute;
-width: 486px;
-height: 220px;
-left: 519px;
-font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 31px;
-line-height: 31px;
-}
-.des h1{
-  /* position: absolute; */
-/* width: 392px;
-height: 97px; */
-left: 519px;
-/* top: 161px; */
-font-family: 'Josefin Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 47px;
-line-height: 47px;
-}
-#add-to-cart{
-  /* margin-top: 30px; */
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   font-family: josefin sans;
   font-style: normal;
   background-color: white;
@@ -549,26 +489,15 @@ line-height: 47px;
   width: 154px;
   font-size: 20px;
 }
-<<<<<<< HEAD
 #add-to-cart:hover {
-=======
-#add-to-cart:hover{
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   height: 54px;
   width: 156px;
   background-color: #de8678;
   color: white;
   font-size: 22px;
-<<<<<<< HEAD
 }
 #buy {
   margin-top: 30px;
-=======
-  
-}
-#buy{
-  /* margin-top: 30px; */
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   font-family: josefin sans;
   font-style: normal;
   background-color: white;
@@ -580,18 +509,13 @@ line-height: 47px;
   width: 110px;
   font-size: 20px;
 }
-<<<<<<< HEAD
 #buy:hover {
-=======
-#buy:hover{
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   height: 54px;
   width: 112px;
   background-color: #de8678;
   color: white;
   font-size: 22px;
 }
-<<<<<<< HEAD
 .btns {
   margin-top: 440px;
   margin-left: 753px;
@@ -601,17 +525,6 @@ line-height: 47px;
   margin-left: 0px;
 }
 #inc {
-=======
-.btns{
-  margin-top: 440px;
-  margin-left: 753px;
-}
-#demoInput{
-  width: 70px;
-  margin-left: 0px;
-}
-#inc{
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   background-color: #de8678;
   color: white;
   border-style: none;
@@ -619,28 +532,14 @@ line-height: 47px;
   height: 30px;
   width: 30px;
 }
-<<<<<<< HEAD
 
 #dec {
-=======
-/* #inc:hover{
-  background-color: white;
-  color: black;
-  border-style: none;
-  border: #de8678 solid 1px;
-  border-radius: 3px;
-  height: 32px;
-  width: 32px;
-} */
-#dec{
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
   background-color: #de8678;
   color: white;
   border-style: none;
   border-radius: 3px;
   height: 30px;
   width: 30px;
-<<<<<<< HEAD
 }
 
                                                                /* ADD to Cart */
@@ -675,6 +574,3 @@ th {
   border: 1px solid #bdbdbd;
   transform: rotate(0.04deg);
 }
-=======
-}
->>>>>>> 9132bc2e746dceadcdd4685b19b8538d78d13d3e
