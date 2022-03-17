@@ -22,7 +22,7 @@
             <input id="inputs" type="text" placeholder="ConfirmPassword *">
             <a href="home.php"><button style="width:270px;" id="login"class="form__button" type="submit">Log in</button> </a>
             <p style="width:388px;">Don’t have an account?</p>
-            <a href="Form.php"><button style="width:270px; background-color: white; color:black" id="login"class="form__button" type="submit">Register</button> </a>
+            <a href="register.php"><button style="width:270px; background-color: white; color:black" id="login"class="form__button" type="submit">Register</button> </a>
         </div>
     </div>
 </body>
