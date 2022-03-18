@@ -12,6 +12,7 @@
 
 <body>
   <?php include "nav.php";  
+// session_start();
   if (!empty($product_array)) { 
     foreach($product_array as $key=>$value){
   ?>
@@ -62,7 +63,7 @@
         <div id="prod" class="product col-lg-4 col-md-6">
           <?php echo "<a href = 'des.php?ID_product=" . $prd['ID_product'] . "'><img src=' image/$img.'height=200px id=img ></a>"; ?> <br>
           <h6 id="lab"><?php echo  $label ?> </h6>
-          <h3 id="he3"><?php echo  $price ?>£  &nbsp; <button  style="position: absolute;width: 37px;height: 30px;background: #FFFFFF;border: 1px solid #DE8678;box-sizing: border-box;border-radius: 14px;" name="quantity_order"><a href="add-to-cart.php">+</a></button><br> </h3> <br>
+          <h3 id="he3"><?php echo  $price ?>£ 
          
         </div>
 

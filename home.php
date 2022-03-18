@@ -18,27 +18,51 @@
         <a href="home.php" id="A">Home </a>
         <a href="products.php" id="B">Products</a>
         <a href="#ingrdion" id="C">Ingredients</a>
-        <a href="#" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
-        <a href="#" id="logoo"><img src="image/logo_dark.png" class="logo" height="60px" id="logoo"></img></a>
+        <a href="index.php" id="logo"><img src="image/logo_light.png" class="logo" height="60px" id="logo"></img></a>
+        <a href="index.php" id="logoo"><img src="image/logo_dark.png" class="logo" height="60px" id="logoo"></img></a>
         <a href="AboutUs.php" id="D">About Us</a>
         <a href="contact.php" id="E">Contact</a>
-        <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px"></a>
-        <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px"></a>
-        <a href="login.php" id="F">Login</a>
+        <div style="display:flex">
+        <div class="bag" style="display: flex; flex-direction: column;">
+            <?php if (isset($_SESSION['inmycart'])) {
+                        echo "<a href='index.php'><p   id='cont' style=' font-size:13px; margin-left: 19px;'>". count($_SESSION['inmycart'])."</p></a>";
+                    } else {
+                        echo' <p style="font-size: 14; margin-left: 42px;">0</p> ' ;
+                    }
+                    
+               
+                  
+                    ?>
+                            <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px" style="margin-top:-49px;"></a>
+        <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px" style="margin-top:-49px;"></a>
+        </div>
+        
+        <?php if(isset( $_SESSION['ID_product'] ) ){
+            echo'<a href="login.php" id="F"><img src ="image/user-add.png" style=" width:20px" style="margin-top:-49px;"></a>';
+        } else{
+            echo '<a href="login.php" id="F"><img src ="image/user-done.png"style=" width:20px" style="margin-top:-49px;"></a>';
+        }
+      
+         ?>
+        </div>
+         <!-- <a href="login.php" id="F">Login</a> -->
+       
     </div>
-
+    
     <script>
         window.onscroll = function() {
             scrollFunction()
         };
-
+        
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
+                
                 document.getElementById("logo").style.display = "none";
                 document.getElementById("logoo").style.display = "";
                 document.getElementById("bag").style.display = "none";
                 document.getElementById("bagblack").style.display = "";
+                document.getElementById("cont").style.color = "black";
+                
                 document.getElementById("navbar").style.background = "linear-gradient(#CFCEDC, white)";
                 document.getElementById("A").style.color = "black";
                 document.getElementById("B").style.color = "black";
@@ -46,13 +70,14 @@
                 document.getElementById("D").style.color = "black";
                 document.getElementById("E").style.color = "black";
                 document.getElementById("F").style.color = "black";
-
-
+                
+                
             } else {
                 document.getElementById("logo").style.display = "";
                 document.getElementById("logoo").style.display = "none";
                 document.getElementById("bagblack").style.display = "none";
                 document.getElementById("bag").style.display = "";
+                document.getElementById("cont").style.color = "white";
                 document.getElementById("navbar").style.background = "none";
                 document.getElementById("A").style.color = "white";
                 document.getElementById("B").style.color = "white";
@@ -71,7 +96,7 @@
                 <button class="header">Shop Now</button>
             </div>
         </div>
-
+        
     </header>
     <div class="content" style="margin-left: 106px;">
         <div>
@@ -98,7 +123,7 @@
             </div>
             <p style="margin-left: -142px;">Strong formulations </p>
         </div>
-
+        
     </div>
     <main>
         <div class="Ingredients">
@@ -119,16 +144,16 @@
             <div class="parent">
                 <?php
                 
-               
+                
                 include "conection.php";
                 // echo $_SESSION['ID_client'];
                 $sql = "SELECT * FROM `product` WHERE quantity_stock <10  ";
-
+                
 
                 $result = $conn->query($sql);
                 $imageresult1 =  
                 $result;
-
+                
                 while ($prd = mysqli_fetch_assoc($result)) {
                 ?>
                     <div class="du">
@@ -136,11 +161,11 @@
                         $price = $prd["price"];
 
                         $label = $prd["label"];
-
+                        
                         $img = $prd['image'];
                         ?>
 
-                        <div class="container">
+                        <div class="containere">
                             <?php
                              echo "<a href = 'des.php?ID_product=" . $prd['ID_product']. "'><img src='image/$img'"."height=200px id='img'></a>";
                             ?>
@@ -152,7 +177,7 @@
 
 
                         </div>
-
+                        
 
                     </div>
                 <?php

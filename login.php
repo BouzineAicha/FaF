@@ -87,7 +87,7 @@ session_start();
                         if ($user['email'] === $email && $user['c_password'] === $pass) {
         
                             
-        
+      
                             $_SESSION['email'] = $user['email'];
         
                             $_SESSION['c_password'] = $user['c_password'];
@@ -96,6 +96,7 @@ session_start();
         
                             echo"<p style='color:#155E0A'>you are connected!!</p>";
                             header("Location: home.php");
+
                             exit();
                         } else {
    

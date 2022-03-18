@@ -65,6 +65,10 @@ body {
 #navbar a:hover:after {
   transform: scaleX(1);
 }
+.bag{
+  display: flex;
+  justify-content: center;
+}
 
 #navbar a {
   float: left;
@@ -467,6 +471,18 @@ h6 {
   font-weight: 300;
   font-size: 31px;
   line-height: 31px;
+  
+}
+.container{
+  display: flex;
+   left: 45%;
+
+}
+.thecontainer{
+  display: flex;
+
+  
+
 }
 .des h1 {
   left: 519px;
@@ -520,10 +536,7 @@ h6 {
   margin-top: 440px;
   margin-left: 753px;
 }
-#demoInput {
-  width: 70px;
-  margin-left: 0px;
-}
+
 #inc {
   background-color: #de8678;
   color: white;
@@ -553,11 +566,16 @@ h6 {
 
   color: #000000;
 }
+.countainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 table {
-  position: center;
-  position: absolute;
-  width: 1200px;
-  left: 40px;
+  border-radius: 19px;
+  width: 90%;
   background-color: #d0d4e0;
   font-family: "Josefin Sans";
   font-style: normal;
@@ -566,11 +584,18 @@ table {
   line-height: 47px;
   color: #000000;
 }
-td {
-  border: 1px solid #bdbdbd;
-  transform: rotate(0.04deg);
+
+table img {
+  width: 150px;
+  height: 150px;
 }
-th {
-  border: 1px solid #bdbdbd;
-  transform: rotate(0.04deg);
+table img[name='aicha'] {
+  width: 25px;
+  height: 25px;
+}
+.delevry{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }

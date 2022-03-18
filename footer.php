@@ -18,7 +18,7 @@
         <img src="image/logo.png" >
         <div  style=" justify-content:space-around; margin:30px ">
             <img src="image/facebook-square.png" >
-            <img src="image/Vector.png" >
+            <img src="image/instgram.png" >
             <img src="image/snapchat-square.png">
             <img src="image/twitter-square.png" style="margin-right: 30px;">
         </div>

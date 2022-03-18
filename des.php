@@ -1,3 +1,9 @@
+<?php session_start();
+ include "conection.php";
+$al=$_GET["ID_product"];
+$sql = "SELECT *FROM `product`WHERE ID_product ='$al'";
+$result = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,9 +21,28 @@
 </head>
 
 <body>
+ 
+
     <?php
-    include "conection.php" ?>
-    <form action="des.php" method="POST" enctype="multipart/form-data">
+    $prd = mysqli_fetch_assoc($result);
+    ?>
+      <div class="countainer">
+        <p class="hh"><span>
+                <?php if (isset($_SESSION['inmycart'])) {
+                    echo "<a href='index.php'>" . count($_SESSION['inmycart']) . "</a>";
+                } else {
+                    echo 0;
+                }
+                $sql = "SELECT * FROM `product`";
+                $result = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+
+                }
+?>
+     </span>Item Cart
+        </p>
+      </div>
+    <form action="index.php?id=<?php echo$prd['ID_product']?>" method="POST" enctype="multipart/form-data">
         <a href="home.php" style="margin-left: 20px  "><img src="image/vectory.png" width="40px" style="padding-top:20px ; "></a>
         <?php
         // $select = mysqli_query($conn, "SELECT * FROM `product`");
@@ -26,16 +51,16 @@
         // $label = $prd["label"];
 
 
-        if (isset($_REQUEST["ID_product"])) {
-            $id = $_REQUEST['ID_product'];
-            $sql = "SELECT *FROM `product`WHERE ID_product ='$id'";
-            $result = $conn->query($sql);
-            $prd = mysqli_fetch_assoc($result);
+        // if (isset($_REQUEST["ID_product"])) {
+        //     $id = $_REQUEST['ID_product'];
+        //     $sql = "SELECT *FROM `product`WHERE ID_product ='$id'";
+        //     $result = $conn->query($sql);
+        
             // $img = mysqli_fetch_assoc($result)['image'];
             //  echo "<img src='image/$img ' id=img >";      
 
 
-        }
+        // }
         // echo "<br>".$prd['ID_product']."<br>".$prd["price"] ." <br>".$prd["label"]."<br>" .$prd["prod_description"];
         ?>
         <div class="decription">
@@ -48,30 +73,63 @@
                 <p><?php echo $prd["prod_description"] ?></p>
                 <h3>Price : <?php echo $prd["price"] ?>£</h3>
                 <h3>QTY:
-                    <button id="" onclick="increment()">+</button>
-                    <input id=demoInput type=number min=0 max=30>
-                    <button onclick="decrement()">-</button>
+                    <div class="container">
+                        <input type="button" onclick="decrementValue()" value="-" class="button_increment" style="width: 36px;width: 40px;height: 36px;border-radius:200px;background: #FFFFFF;margin-left:5%;border: 1px solid #000000;box-sizing: border-box;"/>
+                        <input type="text" name="thequantity" id="quantity" value="1" size="1" class="thequantity" style="width: 110px;margin-left:5%;height: 36px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 8px;" />
+                        <input type="button" onclick="incrementValue()" value="+" class="button_increment" style="width: 40px;height: 36px;margin-left:5%;border-radius:200px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;"/>
+                    </div>
                     <script>
-                        function increment() {
-                            document.getElementById('demoInput').stepUp();
+                        function incrementValue() {
+                            var value = parseInt(document.getElementById('quantity').value);
+                            value = isNaN(value) ? 0 : value;
+                            if (value < 100) {
+                                value++;
+                                document.getElementById('quantity').value = value;
+                              
+                            }
                         }
+                        incrementValue();
 
-                        function decrement() {
-                            document.getElementById('demoInput').stepDown();
+                        function decrementValue() {
+                            var value = parseInt(document.getElementById('quantity').value);
+                            value = isNaN(value) ? 0 : value;
+                            if (value < 100) {
+                                value--;
+                                document.getElementById('quantity').value = value;
+                               
+                            }
                         }
+                        decrementValue();
                     </script>
                 </h3>
 
             </div>
 
             <div class="btns">
-                <button id="add-to-cart">Add to cart</button>
+                <button id="add-to-cart" name="add"><a href="index.php?id=<?php echo$prd['ID_product']?>"></a>Add to cart</button>
                 <button id="buy">Buy</button>
             </div>
 
 
         </div>
     </form>
+    <?php
+             
+    if (isset($_GET["action"]) == "add") {
+                    $id = $_GET["id"];
+                    if (isset($_SESSION['inmycart'][$id])) {
+                        $eski = $_SESSION['inmycart'][$id]['qty'];
+                        $_SESSION['inmycart'][$id] = array("ID_product" => $id, "qty" => $eski + $_POST["thequantity"]);
+                    } else {
+
+                        $_SESSION['inmycart'][$id] = array("ID_product" => $id, "qty" => $_POST["thequantity"]);
+                    }
+                    // echo "<pre>";
+                    // print_r($_SESSION["inmycart"]);
+                    // echo "</pre>";
+                    // header("location:index.php");
+                }
+                ?>
 
 </body>
 
