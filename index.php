@@ -145,9 +145,9 @@ if (isset($_POST['add'])) {
         </table>
         
     </div>
-    <button
-    <?php>
-    echo" $total.£"?> </button>
+<h1 style="margin-left :80%">
+    <?php
+    echo" $total.£"?> </h1>
            <div style=" width:86%;display:flex; flex-direction:row-reverse;">
         <button style="width: 184px;
 height: 58px;

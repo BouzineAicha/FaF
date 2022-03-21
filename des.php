@@ -74,10 +74,10 @@ $result = $conn->query($sql);
                 <h3>Price : <?php echo $prd["price"] ?>£</h3>
                 <h3>QTY:
                     <div class="container">
-                        <!-- <input type="button" onclick="decrementValue()" value="-" class="button_increment" style="width: 36px;width: 40px;height: 36px;border-radius:200px;background: #FFFFFF;margin-left:5%;border: 1px solid #000000;box-sizing: border-box;"/>
+                        <input type="button" onclick="decrementValue()" value="-" class="button_increment" style="width: 36px;width: 40px;height: 36px;border-radius:200px;background: #FFFFFF;margin-left:5%;border: 1px solid #000000;box-sizing: border-box;"/>
                         <input type="text" name="thequantity" id="quantity" value="1" size="1" class="thequantity" style="width: 110px;margin-left:5%;height: 36px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 8px;" />
-                        <input type="button" onclick="incrementValue()" value="+" class="button_increment" style="width: 40px;height: 36px;margin-left:5%;border-radius:200px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;"/> -->
-                        <button type='button' class='button_increment min' >-</button>
+                        <input type="button" onclick="incrementValue()" value="+" class="button_increment" style="width: 40px;height: 36px;margin-left:5%;border-radius:200px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;"/>
+                        <!-- <button type='button' class='button_increment min' >-</button>
                         <div class='withinDiv'><input type='text' style='width: 110px;
                         margin-left: 5%;
                         height: 36px;
@@ -85,7 +85,7 @@ $result = $conn->query($sql);
                         border: 1px solid #000000;
                         box-sizing: border-box;
                         border-radius: 8px;'  name='quantity value='size='1'  id='quantity' class='quantity' /></div>
-                        <button type='button' class='button_increment max' >+</button></td>
+                        <button type='button' class='button_increment max' >+</button></td> -->
                     </div>
                                           
 <script>
