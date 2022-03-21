@@ -30,7 +30,7 @@ include "conection.php";
                     
             
                     ?>
-            <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px" style="margin-top:-49px;"></a>
+            <a href="index.php" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px" style="margin-top:-49px;"></a>
             </div>
         
             <?php if(isset( $_SESSION['ID_product'] ) ){

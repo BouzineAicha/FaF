@@ -34,7 +34,7 @@
                   
                     ?>
                             <a href="#" id="bag"><img src="image/bag.png" class="bag" height="20px" style="margin-top:-49px;"></a>
-        <a href="#" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px" style="margin-top:-49px;"></a>
+        <a href="index.php" id="bagblack"><img src="image/bagblack.png" class="bag" height="20px" style="margin-top:-49px;"></a>
         </div>
         
         <?php if(isset( $_SESSION['ID_product'] ) ){
@@ -93,7 +93,7 @@
         <div id="header" class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('image/header.jpg') ;height:100vh ;background-size: cover  ; background-repeat: no-repeat" ; ;>
             <div>
                 <h1 class="headerp"> Discover our awesome range <br> of beauty products</h1>
-                <button class="header">Shop Now</button>
+               <a href="products.php"> <button class="header">Shop Now</button></a>
             </div>
         </div>
         
