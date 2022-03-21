@@ -96,7 +96,7 @@
                 <button class="header">Shop Now</button>
             </div>
         </div>
-        
+   
     </header>
     <div class="content" style="margin-left: 106px;">
         <div>
@@ -134,6 +134,7 @@
                 <h1 style=" margin-top:50px; margin-left:100px ">Ingredients</h1>
                 <p style=" margin-top:50px ; margin-right:200px; font-size:19px ">We are going back to basics by<br> using ingredients everyone understands. Our formulations<br> have proven efficacy and have never been tested on animals.<br> Our beauty experts came up with a limited product range for<br> higher quality of each products.</p>
             </div>
+            <?php echo $_SESSION['ID_client'] ?>
         </div>
         <div class="ing1">
             <h1 style="text-align: center;margin-top:50px">From FAF</h1>
