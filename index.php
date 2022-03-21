@@ -1,3 +1,4 @@
+<?php include "nav.php";?>
 <?php 
 include "conection.php";
 // session_destroy();
@@ -30,14 +31,28 @@ if (isset($_POST['add'])) {
 </head>
 
 <body>
-<?php include "nav.php"?>
+
     <!-- <form action="?action=add&id=
 <?php
 //echo $row["ID_product"];
 ?>
 " method='post' enctype="multipart/form-data"> -->
     <div class="countainer">
-      
+        <p class="hh"><span>
+                <?php if (isset($_SESSION['inmycart'])) {
+                    echo "<a href='index.php'>" . count($_SESSION['inmycart']) . "</a>";
+                } else {
+                    echo 0;
+                }
+
+                $sql = "SELECT * FROM `product`";
+                $result = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+                }
+                ?>
+                Item cart
+            </span>
+        </p>
         <h1 class="addtocartp"> Summary Of The Article</h1>
         <table>
             <thead>
@@ -72,6 +87,7 @@ if (isset($_POST['add'])) {
                         <td>" . $row['price'] * $value['qty'] + $delevry . "£ &nbsp;<a href='index.php?remove=$row[ID_product]'><img src='image/trash.png' name='aicha'></a></td>
                         
                         </tr>";
+                      
                       
                        
                      
@@ -127,7 +143,12 @@ if (isset($_POST['add'])) {
             ?>
             </tbody>
         </table>
-        <div style=" width:86%;display:flex; flex-direction:row-reverse;">
+        
+    </div>
+    <button
+    <?php>
+    echo" $total.£"?> </button>
+           <div style=" width:86%;display:flex; flex-direction:row-reverse;">
         <button style="width: 184px;
 height: 58px;
 
@@ -140,20 +161,15 @@ font-style: normal;
 font-weight: 400;
 font-size: 24px;
 transform: rotate(0.43deg);">Buy Now</button></div>
-       <div class="delevry">
-
-        <img src="image/icons8-delivery-64 (1) 1.png">
-        <img src="image/icons8-delivery-2.png">
-        <img src="image/icons8-delivery 3.png">
-       </div>
-
-    </div>
-    <?php
-    // echo" $total.£";
-    ?>
-   
     <!-- </form> -->
+    <div class="delevry">
+
+<img src="image/icons8-delivery-64 (1) 1.png">
+<img src="image/icons8-delivery-2.png">
+<img src="image/icons8-delivery 3.png">
+</div>
+
+</div>
 </body>
 
-<!-- <button style="background-color: black;">Buy Now</button> -->
 </html>
