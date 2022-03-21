@@ -77,59 +77,36 @@ $result = $conn->query($sql);
                         <input type="button" onclick="decrementValue()" value="-" class="button_increment" style="width: 36px;width: 40px;height: 36px;border-radius:200px;background: #FFFFFF;margin-left:5%;border: 1px solid #000000;box-sizing: border-box;"/>
                         <input type="text" name="thequantity" id="quantity" value="1" size="1" class="thequantity" style="width: 110px;margin-left:5%;height: 36px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 8px;" />
                         <input type="button" onclick="incrementValue()" value="+" class="button_increment" style="width: 40px;height: 36px;margin-left:5%;border-radius:200px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;"/>
-                        <!-- <button type='button' class='button_increment min' >-</button>
-                        <div class='withinDiv'><input type='text' style='width: 110px;
-                        margin-left: 5%;
-                        height: 36px;
-                        background: #FFFFFF;
-                        border: 1px solid #000000;
-                        box-sizing: border-box;
-                        border-radius: 8px;'  name='quantity value='size='1'  id='quantity' class='quantity' /></div>
-                        <button type='button' class='button_increment max' >+</button></td> -->
                     </div>
-                                          
-<script>
-const max = document.querySelectorAll(".max");
-const min = document.querySelectorAll(".min");
-var price = document.getElementsByClassName('price') ;
-var subtotalproducts = document.getElementsByClassName('subtotalproducts');
-var gtotal = document.getElementById('gtotal');
-gt = 0 ;
-// let quantity = document.querySelector('#quantity');
-max.forEach((btn) => {
-    btn.addEventListener("click", increment);
-});
+                    <script>
+                        function incrementValue() {
+                            var value = parseInt(document.getElementById('quantity').value);
+                            value = isNaN(value) ? 0 : value;
+                            if (value < 100) {
+                                value++;
+                                document.getElementById('quantity').value = value;
+                              
+                            }
+                        }
+                        incrementValue();
 
-function increment() {
-    const quantity = this.previousElementSibling.querySelector("input");
-    quantity.value = Number(quantity.value) + 1;
-    subtotal() ;
-
-}
-min.forEach((btn) => {
-    btn.addEventListener("click", decrement);
-});
-function decrement() {
-    const quantity = this.nextElementSibling.querySelector("input");
-    quantity.value = Number(quantity.value) - 1;
-    subtotal() ;
-}
-function subtotal(){
-    gt = 0 ;
-    for(i=0;i<price.length; i++){
-        subtotalproducts[i].innerText=(price[i].value)(quantity[i].value);
-        gt += (price[i].value)(quantity[i].value);
-    }
-    gtotal.innerText = gt ;
-} 
-subtotal() ; 
-</script>
+                        function decrementValue() {
+                            var value = parseInt(document.getElementById('quantity').value);
+                            value = isNaN(value) ? 0 : value;
+                            if (value < 100) {
+                                value--;
+                                document.getElementById('quantity').value = value;
+                               
+                            }
+                        }
+                        decrementValue();
+                    </script>
                 </h3>
 
             </div>
 
             <div class="btns">
-                <button id="add-to-cart" name="add"><a href="index.php?id=<?php echo$prd['ID_product']?>"></a>Add to cart</button>
+                <button id="add-to-cart" name="add" style="margin-top: 50px;"><a href="index.php?id=<?php echo$prd['ID_product']?>"></a>Add to cart</button>
                 <button id="buy">Buy</button>
             </div>
 
